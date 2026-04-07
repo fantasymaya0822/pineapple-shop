@@ -1,0 +1,45 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ProductCard from '../components/ProductCard.astro';
+import products from '../data/products.json';
+---
+
+<Layout title="所有商品" description="旺來果園精選鳳梨，金鑽、牛奶、釋迦鳳梨等多種品種供您選擇">
+  <section class="max-w-6xl mx-auto px-4 py-12">
+    <div class="text-center mb-12">
+      <h1 class="text-4xl font-bold text-secondary mb-3">🍍 所有商品</h1>
+      <p class="text-gray-500 max-w-lg mx-auto">
+        每一款都是我們精心栽種的心血結晶，歡迎選購！<br />
+        大量訂購歡迎透過 LINE 洽詢優惠價格。
+      </p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+      {products.map(product => (
+        <ProductCard {...product} />
+      ))}
+    </div>
+
+    <!-- Order info -->
+    <div class="mt-16 bg-white rounded-2xl p-8 shadow-sm">
+      <h2 class="text-xl font-bold text-secondary mb-4">📦 訂購說明</h2>
+      <div class="grid md:grid-cols-2 gap-6 text-sm text-gray-600">
+        <div>
+          <h3 class="font-bold text-gray-800 mb-2">付款方式</h3>
+          <ul class="space-y-1">
+            <li>• 銀行轉帳（下單後提供匯款資訊）</li>
+            <li>• 貨到付款（加收 30 元手續費）</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold text-gray-800 mb-2">配送資訊</h3>
+          <ul class="space-y-1">
+            <li>• 常溫宅配，採收後 24 小時內出貨</li>
+            <li>• 本島配送 1-2 天到貨</li>
+            <li>• 滿 2 箱免運費</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

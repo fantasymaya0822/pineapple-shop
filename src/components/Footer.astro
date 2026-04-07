@@ -1,0 +1,64 @@
+---
+const LINE_URL = 'https://line.me/ti/p/@your-line-id';
+---
+
+<footer class="bg-secondary text-white mt-16">
+  <div class="max-w-6xl mx-auto px-4 py-12 grid md:grid-cols-3 gap-8">
+    <div>
+      <h3 class="text-xl font-bold mb-4 flex items-center gap-2">
+        <span class="text-2xl">🍍</span> 旺來果園
+      </h3>
+      <p class="text-green-200 text-sm leading-relaxed">
+        來自南台灣的陽光鳳梨，堅持友善土地的種植方式，
+        從產地直送到您的餐桌。
+      </p>
+    </div>
+
+    <div>
+      <h4 class="font-bold mb-4">快速連結</h4>
+      <ul class="space-y-2 text-green-200 text-sm">
+        <li><a href="/" class="hover:text-white transition-colors">首頁</a></li>
+        <li><a href="/products" class="hover:text-white transition-colors">所有商品</a></li>
+        <li><a href="/about" class="hover:text-white transition-colors">關於我們</a></li>
+        <li><a href="/cart" class="hover:text-white transition-colors">購物車</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="font-bold mb-4">聯絡我們</h4>
+      <ul class="space-y-2 text-green-200 text-sm">
+        <li>📞 0912-345-678</li>
+        <li>📧 hello@pineapple-farm.tw</li>
+        <li>📍 屏東縣○○鄉○○路○○號</li>
+      </ul>
+      <a
+        href={LINE_URL}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center gap-2 mt-4 bg-[#06C755] text-white px-4 py-2 rounded-full text-sm font-bold hover:brightness-110 transition"
+      >
+        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63h2.386c.349 0 .63.285.63.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/>
+        </svg>
+        LINE 聯繫訂購
+      </a>
+    </div>
+  </div>
+
+  <div class="border-t border-green-700 text-center py-4 text-green-300 text-xs">
+    &copy; 2026 旺來果園 版權所有
+  </div>
+</footer>
+
+<!-- Floating LINE button -->
+<a
+  href={LINE_URL}
+  target="_blank"
+  rel="noopener noreferrer"
+  class="fixed bottom-6 right-6 z-50 bg-[#06C755] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
+  aria-label="LINE 聯繫"
+>
+  <svg class="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63h2.386c.349 0 .63.285.63.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/>
+  </svg>
+</a>

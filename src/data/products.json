@@ -3,40 +3,10 @@
     "id": "golden-diamond",
     "name": "金鑽鳳梨",
     "description": "台灣最受歡迎的品種，果肉金黃、甜度高、纖維細緻，是送禮自用的首選。",
-    "price": 350,
+    "price": 650,
     "unit": "箱 (約10斤)",
     "image": "/images/golden-diamond.svg",
     "badge": "人氣王",
     "featured": true
-  },
-  {
-    "id": "milk-pineapple",
-    "name": "牛奶鳳梨",
-    "description": "果肉乳白細嫩，口感滑順如牛奶般香甜，酸度極低，小朋友最愛。",
-    "price": 450,
-    "unit": "箱 (約10斤)",
-    "image": "/images/milk-pineapple.svg",
-    "badge": "限量",
-    "featured": true
-  },
-  {
-    "id": "sugar-apple-pineapple",
-    "name": "釋迦鳳梨",
-    "description": "外型似釋迦，果肉香氣濃郁，甜中帶有獨特芳香，饕客必嚐。",
-    "price": 400,
-    "unit": "箱 (約10斤)",
-    "image": "/images/sugar-apple-pineapple.svg",
-    "badge": "",
-    "featured": true
-  },
-  {
-    "id": "organic-golden",
-    "name": "有機金鑽鳳梨",
-    "description": "通過有機認證，不使用化學農藥與肥料，安心享用大自然的甜美。",
-    "price": 500,
-    "unit": "箱 (約10斤)",
-    "image": "/images/organic-golden.svg",
-    "badge": "有機認證",
-    "featured": false
   }
 ]
